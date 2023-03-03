@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "develop": "concurrently \"react-scripts start\" \" nodemon ./src/services/server.js\"",
+    "start": "concurrently \"react-scripts start\" \" node ./src/services/server.js\"",
+    "build": "CI=false react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "seeds": "node ./src/services/seeds/index.js"
   },
   "author": "",
   "license": "ISC",
