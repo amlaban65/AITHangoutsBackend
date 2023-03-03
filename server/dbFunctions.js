@@ -7,7 +7,8 @@ const { ObjectId } = require('mongodb');
 
 // the mongodb server URL
 const dotenv = require('dotenv').config();
-const dbURL = process.env.dbURL;
+const dbURL = 'mongodb+srv://admin:admin@aithangouts.5xmgg5n.mongodb.net/?retryWrites=true&w=majority';
+
 // connection to the db
 const connect = async () => {
   // always use try/catch to handle any exception
