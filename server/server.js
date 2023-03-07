@@ -40,7 +40,7 @@ webapp.listen(port, async () => {
   db = await dbLib.connect();
   console.log(`Server running on port: ${port}`);
 });
-webapp.get('/hangouts/', auth,  async (req, res) => {
+webapp.get('/hangouts/',  async (req, res) => {
     console.log('READ all hangouts');
     try {
       // get the data from the db
